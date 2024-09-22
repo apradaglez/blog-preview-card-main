@@ -67,7 +67,8 @@ body {
 }
 
 .blog-card-cathegory {
-    display: block;
+    display: flex;
+    justify-content: center;
     width: 5rem;
     /* width: 4.5625rem; */
     /* height: 1.625rem; */
