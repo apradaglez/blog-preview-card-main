@@ -68,8 +68,8 @@ body {
 
 .blog-card-cathegory {
     display: block;
-    width: 4.5625rem;
-    height: 1.625rem;
+    width: 4.65rem; /* width: 4.5625rem; */
+    /* height: 1.625rem; */
     background-color: var(--clr-yellow);
     border-radius: .25rem;
     -webkit-border-radius: .25rem;
