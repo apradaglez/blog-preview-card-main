@@ -1,37 +1,33 @@
 :root {
-    --mobile-size: 375px;
-    --desktop-size: 1440px;
+    --mobile-size: 23.4375rem; /* 375px */
+    --desktop-size: 90rem; /* 1440px */
 
     --clr-yellow: hsl(47, 88%, 63%);
     --clr-white: hsl(0, 0%, 100%);
+    --clr-black: hsl(0, 0%, 0%);
     --clr-gray500: hsl(0, 0%, 42%);
     --clr-gray950: hsl(0, 0%, 7%);
 
     --fs-body: 16px;
-    --ff: 'Figtree-Italic', 'Figtree-Variable', Arial;
+   
     --fw-500: 500;
     --fw-800: 800;
 }
 
 @font-face {
     font-family: 'Figtree-Italic';
-    src: url('assets/fonts/Figtree-Italic-VariableFont_wght.ttf') format('ttf'),
+    src: url('../assets/fonts/Figtree-Italic-VariableFont_wght.ttf') format('truetype'),
+    url('../assets/fonts/AnyConv.com__Figtree-Italic-VariableFont_wght.woff2') format('woff2');
 }
 
 @font-face {
     font-family: 'Figtree-Variable';
-    src: url('assets/fonts/Figtree-VariableFont_wght.ttf') format('ttf'),
-}
-
-
-*,
-*::after,
-*::before {
-    box-sizing: border-box;
+    src: url('../assets/fonts/Figtree-VariableFont_wght.ttf') format('truetype'),
+    url('../assets/fonts/AnyConv.com__Figtree-VariableFont_wght.woff2') format('woff2');
 }
 
 body {
-    font-family: var(--ff);
+    font-family: 'Figtree-Variable', Arial;
     font-size: var(--fs-body);
     background-color: var(--clr-yellow);
     max-height: 100vh;
@@ -39,47 +35,96 @@ body {
 
 .blog-card-container {
     display: grid;
-    max-width: 327px;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
-    border-color: 1px solid var(--clr-gray950);
-    padding: 24px;
-    box-shadow: 2px solid var(--clr-grey950);
+    max-width: 20.4375rem;
+    border-radius: 1.25rem;
+    -webkit-border-radius: 1.25rem;
+    -moz-border-radius: 1.25rem;
+    -ms-border-radius: 1.25rem;
+    -o-border-radius: 1.25rem;
+    border-color: .0625rem solid var(--clr-gray950);
+    padding: 1.5rem;
+    box-shadow: 1.125rem solid var(--clr-grey950);
     background-color: var(--clr-white);
     margin-inline: auto;
-    margin-top: 15%;
+    margin-top: 5%;
+    gap: 1.5rem;
+    box-shadow: .5rem .5rem var(--clr-black);
 }
 
 .blog-card__img {
     width: 100%;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    border-color: 2px solid red;
+    border-radius: .625rem;
+    -webkit-border-radius: .625rem;
+    -moz-border-radius: .625rem;
+    -ms-border-radius: .625rem;
+    -o-border-radius: .625rem;
 }
 
 .blog-card-content {
     display: grid;
+    grid-template-columns: 1fr;
+    gap: .75rem;
 }
 
 .blog-card-cathegory {
     display: block;
-    width: 73px;
-    height: 26px;
+    width: 4.5625rem;
+    height: 1.625rem;
     background-color: var(--clr-yellow);
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
+    border-radius: .25rem;
+    -webkit-border-radius: .25rem;
+    -moz-border-radius: .25rem;
+    -ms-border-radius: .25rem;
+    -o-border-radius: .25rem;
     border-color: 1px solid var(--clr-grey950);
     color: var(--clr-grey950);
     font-weight: var(--fw-800);
-    font-size: 12px;
-    padding: 4px 12px;
+    font-size: .75rem;
+    padding: .25rem .75rem;
+}
+
+.blog-card-date {
+    color: var(--clr-gray950);
+    font-size: .75rem;
+    font-weight: var(--fw-500);
+}
+
+.blog-card-title {
+    color: var(--clr-gray950);
+    font-size: 1.25rem;
+    font-weight: var(--fw-800);
+}
+
+.blog-card-paragraph {
+    color: var(--clr-gray500);
+    font-size: .875rem;
+}
+
+.blog-card-author {
+    display: flex;
+    width: 8.0625rem;
+    height: 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blog-card-author__img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.blog-card-author__p {
+    font-size: .93rem;
+    font-weight: var(--fw-800);
+}
+
+.attribution { 
+    font-size: .53333rem;
+    text-align: center;
+    font-family: 'Figtree-Italic';
+}
+   
+.attribution a {
+    color: var(--clr-gray500);
+    text-decoration: none;
 }
