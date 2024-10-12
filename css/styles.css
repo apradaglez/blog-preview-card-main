@@ -120,7 +120,7 @@ body {
     font-weight: var(--fw-800);
 }
 
-.attribution { 
+/* .attribution { 
     font-size: .53333rem;
     text-align: center;
     font-family: 'Figtree-Italic';
@@ -129,4 +129,4 @@ body {
 .attribution a {
     color: var(--clr-gray500);
     text-decoration: none;
-}
+} */
